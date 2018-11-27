@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/img_albumart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/empty_albumart" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample Title"
+            android:textColor="#dddddd"/>
+
+        <TextView
+            android:id="@+id/txt_sub_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample Subtitle"
+            android:textSize="12dp"
+            android:textColor="#999999"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_duration"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="03:00"
+        android:textSize="12dp" />
+
+</LinearLayout>
